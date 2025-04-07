@@ -44,7 +44,9 @@ Array.from(document.querySelectorAll(".download-game")).forEach((element) => {
     const gameName = modalTitle.innerText.trim();
 
     if (isProduction === true) {
-      _jb();
+      // _jb();
+      _vs()
+
     } else {
       const file = await generateFile(gameName)
     }
